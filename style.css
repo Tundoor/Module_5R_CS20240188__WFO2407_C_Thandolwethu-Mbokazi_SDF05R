@@ -52,3 +52,25 @@ p {
 }
 
 /* Add your custom styles for btn-1, btn-2, and btn-3 */
+
+.btn-1 {
+    background-color: rgb(246, 175, 246);
+}
+
+.btn-1:hover {
+    background-color: plum;
+    animation-name: btn-1;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+
+}
+
+@keyframes btn-1{
+    0%{background-color: violet;}
+    20%{background-color: blue; transform: scale(5%,5%)}
+    40%{background-color: lightblue;}
+    60%{background-color: green;}
+    80%{background-color: yellow;}
+    100%{background-color: red;}
+}
