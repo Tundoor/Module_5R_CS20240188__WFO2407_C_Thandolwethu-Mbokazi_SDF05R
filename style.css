@@ -55,6 +55,7 @@ p {
 
 .btn-1 {
     background-color: rgb(246, 175, 246);
+    
 }
 
 .btn-1:hover {
@@ -74,3 +75,25 @@ p {
     80%{background-color: yellow;}
     100%{background-color: red;}
 }
+
+.btn-2{
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    border-color: cornflowerblue;}
+
+.btn-2:hover {
+    animation-name: btn-2;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);  /*Add to Make faster*/
+}
+
+@keyframes btn-2 {
+    from{transform: rotate(0deg); opacity: 0%;}
+    to{transform: rotate(360deg);}
+}
+
+       
+
+
+
