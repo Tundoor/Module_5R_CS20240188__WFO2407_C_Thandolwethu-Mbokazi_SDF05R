@@ -51,8 +51,6 @@ p {
     outline: none;
 }
 
-/* Add your custom styles for btn-1, btn-2, and btn-3 */
-
 .btn-1 {
     background-color: rgb(246, 175, 246); border-color:rgb(246, 175, 246)
     
@@ -86,7 +84,7 @@ p {
     animation-name: btn-2;
     animation-duration: 1s;
     animation-delay: 0.5s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);  /*Add to Make faster*/
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);  /*Added to Make faster*/
 }
 
 @keyframes btn-2 {
@@ -94,7 +92,25 @@ p {
     to{transform: rotate(360deg);}
 }
 
-       
+.btn-3{
+    background-color: whitesmoke;
+    border-color: white;}
+
+.btn-3:hover {
+    animation-name: btn-3;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes btn-3 {
+   20%{border-top-color: rgb(28, 28, 250); border-radius: 5px;}
+   40%{border-right-color: rgb(83, 91, 252);border-radius: 10px;}
+   60%{border-bottom-color: rgb(117, 117, 246) ;border-radius: 15px;}
+   80%{border-left-color: rgb(172, 172, 253);border-radius: 20px;}
+   100%{border-top-color: #dedfff;border-radius: 5px;}
+
+}     
 
 
 
